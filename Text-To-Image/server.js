@@ -52,7 +52,7 @@ app.post('/dream', async (req, res) => {
     }
     catch(error){
         console.error(error)
-        res.status(500).send(error?.response.data.error.message || 'Something went wrong')
+        res.status(500).send(error?.response.data.error.message || 'Something went wrong in server')
     }
 });
 // fre-up server in port 8080
